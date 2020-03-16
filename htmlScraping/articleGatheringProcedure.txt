@@ -1,0 +1,18 @@
+March 14th 2020
+1. Searched pubmed for "geese"
+2. Sorted by best match 
+3. Display 200 per page 
+4. Run the following script on the console 
+
+
+var pubmedIds = [];
+var list = document.getElementsByTagName("DD");
+for (let item of list) {
+    if (item.innerHTML !== undefined) {
+        pubmedIds.push(item.innerHTML)
+    }
+}
+pubmedIds.toString()
+
+5. Copy and paste PMIDs from console into plain text file for parsing 
+6. Switch pages until 3000 PMIDs are gathered (15 pages) 
